@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title> FitWeb </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            margin-top: 20px;
+            margin-left: 25px;
+            font-size: 18px;
+            background-image: url("BackgroundPic.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .buton{
+            margin-left: 40%;
+        }
+        .link{
+            margin-left: 40%;
+            font-size: 35px;
+            text-align: center;
+        }
+        .question{
+            font-size: 25px;
+            font-style: italic;
+        }
+
+        .sentence{
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .title{
+            font-size: 50px;
+            margin-left: 40%;
+        }
+        .resetButton {
+            font-size: 25px;
+            transition-duration: 0.4s;
+        }
+
+        .resetButton:hover {
+            font-size: 25px;
+            background-color: red;
+            color: white;
+        }
+        .subButton {
+            font-size: 25px;
+            transition-duration: 0.4s;
+        }
+
+        .subButton:hover {
+            font-size: 25px;
+            background-color: green;
+            color: white;
+        }
+       /* .listButton {
+            font-size: 25px;
+            transition-duration: 0.4s;
+        }
+
+        .listButton:hover {
+            font-size: 25px;
+            background-color: blue;
+            color: white;
+        }*/
+    </style>
+</head>
+<body>
+<b><p class="title">Stay Fit</p></b>
+<br>
+<br>
+<b><p class="sentence">Buna ziua, va rog sa completati urmatorul formular cu datele dumneavoastra: </p></b>
+<form method="post" action="Users.php" class="form">
+    <div class="container">
+        <div class="form-group">
+            <div class="row">
+                <label class="question col-5" for="name">Nume</label>
+                <input type="text" class="form-control col" name="nume"
+                    id="name" placeholder="Nume*:" required/>
+
+                    <label class="question col-5" for="prenume">Prenume</label>
+                    <input type="prenume" class="form-control col" name="prenume"
+                        id="prenume" placeholder="Prenume*:" required/>
+            </div>
+            <div class="form-group">
+                <label class="question">Genul dumneavoastra:</label>
+                <br>
+                <input type="radio" id="male" name="gen" value="Masculin" required>
+                <label for="male">Masculin</label><br>
+                <input type="radio" id="female" name="gen" value="Feminin">
+                <label for="female">Feminin</label><br>
+            </div>  
+
+            <div class="form-group">
+                <label class="question" for="inaltime">Care este inaltimea dumneavoastra in cm?</label>
+                <select class="form-control" name="inaltime" id="inaltime">
+                    <option value="150cm"> Mai putin de 150 cm</option>
+                    <option value="151cm">151cm-165cm</option>
+                    <option value="166cm">166cm-180cm</option>
+                    <option value="181cm">181cm-195cm</option>
+                    <option value="196cm">Mai mult de 196 cm</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="question" for="masa">Care este masa dumneavoastra corporala in kg?</label>
+                <select class="form-control" name="masa" id="masa">
+                    <option value="50kg"> Mai putin de 50 kg</option>
+                    <option value="51kg">51kg-65kg</option>
+                    <option value="66kg">66kg-80kg</option>
+                    <option value="81kg">81kg-95kg</option>
+                    <option value="96kg">Mai mult de 96 kg</option>
+                </select>
+            </div>
+        
+
+            <div class="form-group">
+                <label class="question" for="varsta">Din ce categorie de varsta faceti parte?</label>
+                <select class="form-control" name="varsta" id="varsta">
+                    <option value="20s"> 18 ani - 29 ani</option>
+                    <option value="30s">30 ani - 39 ani</option>
+                    <option value="40s">40 ani - 49 ani</option>
+                    <option value="50s">50 ani - 59 ani</option>
+                    <option value="60s">Mai mult de 60 de ani</option>
+                </select>
+            </div>
+
+            
+            <div class="form-group">
+                <label class="question" for="tel">Care este telul dumneavoastra?</label>
+                <select class="form-control" name="tel" id="tel">
+                    <option value="ScadereInGreutate">Pierdere in greutate</option>
+                    <option value="CrestereInGreutate">Crestere in greutate</option>
+                    <option value="MentinereGreutate">Mentinerea greutatii</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label class="question" for="activ">Sunteti activ fizic?</label>
+                <select class="form-control" name="activ" id="activ">
+                    <option value="Da">Da</option>
+                    <option value="Nu">Nu</option>
+                </select>
+            </div>
+
+            <div class="col-xs-10 col-xs-offset-2 buton">
+                <button type="submit" name="submit" class="subButton"> Submit</button>
+                <button type="reset" class="resetButton"> Reset</button>
+            </div> 
+            <u><a class="link" href="InfoUser.php">Lista utilizatori</a></u>
+        </div> 
+    </div>
+    
+</form>
+</body>
+</html>
