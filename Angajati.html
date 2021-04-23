@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title> FitWeb </title>
+    <title> Angajati </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -59,20 +59,10 @@
             background-color: green;
             color: white;
         }
-       /* .listButton {
-            font-size: 25px;
-            transition-duration: 0.4s;
-        }
-
-        .listButton:hover {
-            font-size: 25px;
-            background-color: blue;
-            color: white;
-        }*/
     </style>
 </head>
 <body>
-<b><p class="title">Stay Fit</p></b>
+<b><p class="title">Angajat</p></b>
 <br>
 <br>
 <b><p class="sentence">Buna ziua, va rog sa completati urmatorul formular cu datele dumneavoastra: </p></b>
@@ -89,7 +79,7 @@
                         id="prenume" placeholder="Prenume*:" required/>
             </div>
             <div class="form-group">
-                <label class="question">Genul dumneavoastra:</label>
+                <label class="question">Sexul dumneavoastra:</label>
                 <br>
                 <input type="radio" id="male" name="gen" value="Masculin" required>
                 <label for="male">Masculin</label><br>
@@ -98,55 +88,14 @@
             </div>  
 
             <div class="form-group">
-                <label class="question" for="inaltime">Care este inaltimea dumneavoastra in cm?</label>
-                <select class="form-control" name="inaltime" id="inaltime">
-                    <option value="150cm"> Mai putin de 150 cm</option>
-                    <option value="151cm">151cm-165cm</option>
-                    <option value="166cm">166cm-180cm</option>
-                    <option value="181cm">181cm-195cm</option>
-                    <option value="196cm">Mai mult de 196 cm</option>
-                </select>
+                <label class="question col-5" for="email">Email</label>
+                    <input type="email" class="form-control col" name="email"
+                        id="email" placeholder="Email*:" required/>
             </div>
 
             <div class="form-group">
-                <label class="question" for="masa">Care este masa dumneavoastra corporala in kg?</label>
-                <select class="form-control" name="masa" id="masa">
-                    <option value="50kg"> Mai putin de 50 kg</option>
-                    <option value="51kg">51kg-65kg</option>
-                    <option value="66kg">66kg-80kg</option>
-                    <option value="81kg">81kg-95kg</option>
-                    <option value="96kg">Mai mult de 96 kg</option>
-                </select>
-            </div>
-        
-
-            <div class="form-group">
-                <label class="question" for="varsta">Din ce categorie de varsta faceti parte?</label>
-                <select class="form-control" name="varsta" id="varsta">
-                    <option value="20s"> 18 ani - 29 ani</option>
-                    <option value="30s">30 ani - 39 ani</option>
-                    <option value="40s">40 ani - 49 ani</option>
-                    <option value="50s">50 ani - 59 ani</option>
-                    <option value="60s">Mai mult de 60 de ani</option>
-                </select>
-            </div>
-
-            
-            <div class="form-group">
-                <label class="question" for="tel">Care este telul dumneavoastra?</label>
-                <select class="form-control" name="tel" id="tel">
-                    <option value="ScadereInGreutate">Pierdere in greutate</option>
-                    <option value="CrestereInGreutate">Crestere in greutate</option>
-                    <option value="MentinereGreutate">Mentinerea greutatii</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label class="question" for="activ">Sunteti activ fizic?</label>
-                <select class="form-control" name="activ" id="activ">
-                    <option value="Da">Da</option>
-                    <option value="Nu">Nu</option>
-                </select>
+                <label class="question col-5" for="dataN">Data dumneavoastra de nastere:</label>
+                <input type="date" class="form-control col" id="dataN" name="dataN">
             </div>
 
             <div class="col-xs-10 col-xs-offset-2 buton">
